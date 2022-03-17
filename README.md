@@ -16,4 +16,4 @@ A jupyter notebook is available to load and plot PNW dataset at [here](Inpect_PN
 ### Google Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
 
-If you are more familiar with Google Colab, go to the link above. Note that interactive plotting  is not available. Please let me know if you have made interactive plotting works in Google Colab before.
+If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available. Please let me know if you have made interactive plotting works in Google Colab before.
