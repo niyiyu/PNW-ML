@@ -14,7 +14,7 @@ Here are two ways to look at PNW dataset.
 A jupyter notebook is available to load and plot PNW dataset at [here](Inspect-PNW-Dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
 
 2. Google Colab
-[![Open In Colab](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
 
 If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available. Please let me know if you have made interactive plotting works in Google Colab before.
 
@@ -30,6 +30,6 @@ Here are two ways to look at PNW ML Catalog.
 A jupyter notebook is available to load and plot PNW ML Catalog at [here](Inspect-PNW-ML-Catalog.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
 
 1. Google Colab
-[![Open In Colab](https://colab.research.google.com/drive/1t-Gz0sK1ZZzQUqOHn5cxesX7jWd6Um7C?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1t-Gz0sK1ZZzQUqOHn5cxesX7jWd6Um7C?usp=sharing)
 
 Similar to the dataset, a Colab notebook is available to work directly with the browser.
