@@ -11,7 +11,7 @@ PNW datasets are made of two files: waveform and metadata. Download them using t
 ### Inspect Dataset
 Here are two ways to look at PNW dataset. 
 1. Jupyter Notebook
-A jupyter notebook is available to load and plot PNW dataset at [here](Inspect-PNW-Dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
+A jupyter notebook is available to load and plot PNW dataset at [here](inspect-PNW-dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
 
 2. Google Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
@@ -27,7 +27,7 @@ PNW ML Catalog is made of two parts: waveform and metadata. Download the metadat
 ### Inspect Dataset
 Here are two ways to look at PNW ML Catalog. 
 1. Jupyter Notebook
-A jupyter notebook is available to load and plot PNW ML Catalog at [here](Inspect-PNW-ML-Catalog.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
+A jupyter notebook is available to load and plot PNW ML Catalog at [here](inspect-PNW-ML-catalog.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
 
 1. Google Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1t-Gz0sK1ZZzQUqOHn5cxesX7jWd6Um7C?usp=sharing)
