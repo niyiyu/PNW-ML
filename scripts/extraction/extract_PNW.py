@@ -51,7 +51,7 @@ for quake_year in np.arange(2001, 2021):
 
         data = {}
         meta = pd.DataFrame(columns = [
-            "source_id", "source_origin_time", "source_latitude_deg", "source_longitude_deg", 
+            "source_id", "source_origin_time", "source_latitude_deg", "source_longitude_deg", "source_type",
             "source_depth_km", "split", "source_magnitude", "station_network_code", "trace_channel", 
             "station_code", "station_location_code", "station_latitude_deg",  "station_longitude_deg",
             "station_elevation_m", "trace_name", "trace_sampling_rate_hz", "trace_start_time",
@@ -71,6 +71,7 @@ for quake_year in np.arange(2001, 2021):
             source_longitude_deg = event[0].origins[0].longitude
             source_depth_km = event[0].origins[0].depth / 1000
             source_magnitude = event[0].magnitudes[0].mag
+            source_type = event[0].source_type
 
             # check picks
             for pick in event[0].picks:
@@ -125,6 +126,7 @@ for quake_year in np.arange(2001, 2021):
                             meta = meta.append({
                                 "source_id": source_id, "source_origin_time": source_origin_time, 
                                 "source_latitude_deg": "%.3f" % source_latitude_deg, "source_longitude_deg": "%.3f" % source_longitude_deg, 
+                                "source_type": source_type,
                                 "source_depth_km": "%.3f" % source_depth_km, "source_magnitude": source_magnitude,
                                 "station_network_code": station_network_code, "trace_channel": trace_channel[:2], 
                                 "station_code": station_code, "station_location_code": station_location_code,
