@@ -45,8 +45,8 @@ def update_data(data, streamdata, ibucket):
 
 eventlimit = None                                                        # for debug only
 
-for quake_year in np.arange(2001, 2021):
-    if quake_year % size == rank:
+for quake_year in np.arange(2001, 2022):
+    if (quake_year % size == rank) and (quake_year != 2007):
         ide = 0
 
         data = {}
@@ -71,7 +71,7 @@ for quake_year in np.arange(2001, 2021):
             source_longitude_deg = event[0].origins[0].longitude
             source_depth_km = event[0].origins[0].depth / 1000
             source_magnitude = event[0].magnitudes[0].mag
-            source_type = event[0].source_type
+            source_type = event[0].event_type
 
             # check picks
             for pick in event[0].picks:
@@ -98,13 +98,15 @@ for quake_year in np.arange(2001, 2021):
                                                                 station = station_code,
                                                                 location= station_location_code,
                                                                 channel = trace_channel[:2] + '?',
-                                                                year    = str(pyear),
-                                                                doy     = str(pdoy).zfill(3))
+                                                                year    = pyear, doy = pdoy)
                             stream = stream.trim(source_origin_time - 50 , source_origin_time - 50 + window_length)
                             stream.detrend()
                             stream.resample(trace_sampling_rate_hz)
-                            stream.merge(fill_value = 0)
+
+                            # need to test gap first then merge
+                            # stream.merge(fill_value = 0) 
                             if len(stream) > 0 and len(stream.get_gaps()) == 0:
+                                stream.merge(fill_value = 0)
                                 ibucket = np.random.choice(list(np.arange(nbucket) + 1))
                                 stream_data = np.array(stream)
                                 split = splits[np.random.choice([0, 1, 2], p = [0.6, 0.2, 0.2])]
