@@ -20,7 +20,7 @@ waveformclient = WaveformClient()
 
 quakeml_path = '/1-fnp/pnwstore1/p-wd11/PNWQuakeML/UW/'                  # directory contains quakeml file
 stationxml_path = '/1-fnp/pnwstore1/p-wd11/PNWStationXML/%s/%s.%s.xml'   # directory of station xml file
-# splits = ['train', 'test', 'dev']    
+splits = ['train', 'test', 'dev']    
 trace_sampling_rate_hz = 100                                             # resample to 100 hz                                   
 window_length = 150                                                      # window length in seconds
 nbucket = 10
@@ -39,7 +39,8 @@ def update_data(data, streamdata, ibucket):
 
 eventlimit = None                                                        # for debug only
 
-for quake_year in np.arange(2001, 2022):
+for quake_year in np.arange(2002, 2022):
+# for quake_year in [2021]:
     if quake_year % size == rank:
         ide = 0
 
@@ -54,7 +55,7 @@ for quake_year in np.arange(2001, 2022):
             "trace_S_arrival_sample", "trace_P_arrival_sample", 
             "trace_S_arrival_uncertainty_s", "trace_P_arrival_uncertainty_s", 
             "trace_S_polarity", "trace_P_polarity", "trace_S_onset", "trace_P_onset",   # new features to be added
-            "trace_snr_db",                                                             # new features calcuated after extraction
+            "trace_snr_db", "splits",                                                          # new features calcuated after extraction
             "CODE"])    # for dev only
 
         for ievent, quakeml  in (enumerate(os.listdir(quakeml_path + str(quake_year)))):
@@ -117,13 +118,13 @@ for quake_year in np.arange(2001, 2022):
                                 stream.merge(fill_value = 0)
                                 ibucket = np.random.choice(list(np.arange(nbucket) + 1))
                                 stream_data = np.array(stream)
-                                # split = splits[np.random.choice([0, 1, 2], p = [0.6, 0.2, 0.2])]
+                                split = splits[np.random.choice([0, 1, 2], p = [0.6, 0.2, 0.2])]
                                 if stream_data.shape[1] == window_length * trace_sampling_rate_hz + 1:
                                     data = update_data(data, stream_data, ibucket)
-                                elif (stream_data.shape[1] - window_length * trace_sampling_rate_hz) <= 2:   # tolerate 2 smaple
+                                elif 0 < (stream_data.shape[1] - window_length * trace_sampling_rate_hz - 1) <= 2:   # tolerate 2 smaple
                                     data = update_data(data, stream_data[:, :window_length * trace_sampling_rate_hz+1], ibucket)
                                 else:
-                                    pass
+                                    break
 
                                 trace_name = 'bucket%d$%d,:3,:15001' % (ibucket, len(data[ibucket]) - 1)
                                 idx = meta.index[meta['CODE'] == CODE].tolist()[0]
@@ -134,7 +135,7 @@ for quake_year in np.arange(2001, 2022):
                                 meta.iloc[idx, meta.columns.get_loc("trace_%s_onset" % phase)] = onset
                                 meta.iloc[idx, meta.columns.get_loc("trace_%s_polarity" % phase)] = polarity
                                 meta.iloc[idx, meta.columns.get_loc("trace_start_time")] = str(trace_start_time)
-                                # meta.iloc[idx, meta.columns.get_loc("split")] = split
+                                meta.iloc[idx, meta.columns.get_loc("split")] = split
                         else:
                             meta = meta.append({
                                 "source_id": source_id, "source_origin_time": source_origin_time, "source_magnitude_type": source_magnitude_type,
