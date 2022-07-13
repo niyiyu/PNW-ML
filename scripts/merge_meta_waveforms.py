@@ -43,4 +43,5 @@ meta_PS.to_csv("../data/metadata.csv", index = False)
 f = h5py.File("../data/waveforms.hdf5", mode = "w")
 for i in range(nbucket):
     f[f'/data/bucket{i + 1}'] = data[i + 1]
+f['/data_format/component_order'] = 'ZNE' 
 f.close()
