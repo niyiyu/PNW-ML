@@ -45,7 +45,8 @@ def update_data(data, streamdata, ibucket):
 
 eventlimit = None                                                        # for debug only
 
-for quake_year in np.arange(2001, 2022):
+# for quake_year in np.arange(2001, 2022):
+for quake_year in [2016]:
     if quake_year % size == rank:
         ide = 0
 
@@ -137,7 +138,7 @@ for quake_year in np.arange(2001, 2022):
                                 meta.iloc[idx, meta.columns.get_loc("trace_sampling_rate_hz")] = trace_sampling_rate_hz
                                 meta.iloc[idx, meta.columns.get_loc("trace_%s_onset" % phase)] = onset
                                 meta.iloc[idx, meta.columns.get_loc("trace_%s_polarity" % phase)] = polarity
-                                meta.iloc[idx, meta.columns.get_loc("trace_start_time")] = trace_start_time.timestamp
+                                meta.iloc[idx, meta.columns.get_loc("trace_start_time")] = str(trace_start_time)
                                 # meta.iloc[idx, meta.columns.get_loc("split")] = split
                         else:
                             meta = meta.append({
@@ -169,9 +170,9 @@ for quake_year in np.arange(2001, 2022):
         meta_PS = meta[select]
         meta_PS = meta_PS.drop(columns = "CODE")
         meta_PS = meta_PS.drop(columns = "trace_S_polarity") # dont rely on S polarity
-        meta_PS.to_csv("./mpiextract/proc%s_metadata.csv" % str(quake_year), sep = ',', index=False)
+        meta_PS.to_csv("../data/mpiextract/proc%s_metadata.csv" % str(quake_year), sep = ',', index=False)
         
-        f = h5py.File("./mpiextract/proc%s_waveforms.hdf5" % str(quake_year), mode = "w")
+        f = h5py.File("../data/mpiextract/proc%s_waveforms.hdf5" % str(quake_year), mode = "w")
         f['/data_format/component_order'] ='ZNE'
         for b in range(nbucket):
             f['/data/bucket%d' % (b + 1)] = data[b + 1]
