@@ -3,17 +3,12 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 from mpi4py import MPI
 import h5py
 import os
-import io
 import pandas as pd
 import obspy
 import numpy as np
-import sqlite3
-import matplotlib.pyplot as plt
-from tqdm import tqdm
 from obspy import UTCDateTime
 import sys
 sys.path.append("/home/niyiyu/Research/pnwstore/")
-import copy
 
 # parallelize with ompi
 comm = MPI.COMM_WORLD
@@ -21,7 +16,6 @@ rank = comm.Get_rank()
 size = comm.Get_size()
 
 from pnwstore.mseed import WaveformClient
-from pnwstore.station import StationClient
 waveformclient = WaveformClient()
 
 quakeml_path = '/1-fnp/pnwstore1/p-wd11/PNWQuakeML/UW/'                  # directory contains quakeml file
@@ -45,15 +39,15 @@ def update_data(data, streamdata, ibucket):
 
 eventlimit = None                                                        # for debug only
 
-# for quake_year in np.arange(2001, 2022):
-for quake_year in [2016]:
+for quake_year in np.arange(2001, 2022):
     if quake_year % size == rank:
         ide = 0
 
         data = {}
         meta = pd.DataFrame(columns = [
             "source_id", "source_origin_time", "source_latitude_deg", "source_longitude_deg", "source_type",
-            "source_depth_km", "source_magnitude", "source_magnitude_type", "source_magnitude_uncertainty", "source_horizontal_uncertainty_km",
+            "source_depth_km", "source_magnitude", "source_magnitude_type", "source_magnitude_uncertainty", 
+            "source_depth_uncertainty_km", "source_horizontal_uncertainty_km",
             "station_network_code", "trace_channel", "station_code", 
             "station_location_code", "station_latitude_deg",  "station_longitude_deg",  # new features calcuated after extraction
             "station_elevation_m", "trace_name", "trace_sampling_rate_hz", "trace_start_time", 
@@ -82,6 +76,7 @@ for quake_year in [2016]:
             else:
                 source_magnitude_uncertainty = np.nan
             source_horizontal_uncertainty = float(event[0].origins[0].origin_uncertainty.horizontal_uncertainty)/1000.
+            source_depth_uncertainty = float(event[0].origins[0].depth_errors['uncertainty'])/1000.
             source_type = event[0].event_type
 
             # check picks
@@ -145,6 +140,7 @@ for quake_year in [2016]:
                                 "source_id": source_id, "source_origin_time": source_origin_time, "source_magnitude_type": source_magnitude_type,
                                 "source_magnitude_uncertainty": "%.3f" % source_magnitude_uncertainty, 
                                 "source_horizontal_uncertainty_km": "%.3f" % source_horizontal_uncertainty,
+                                "source_depth_uncertainty_km": "%.3f" % source_depth_uncertainty, 
                                 "source_latitude_deg": "%.3f" % source_latitude_deg, "source_longitude_deg": "%.3f" % source_longitude_deg, 
                                 "source_type": source_type,
                                 "source_depth_km": "%.3f" % source_depth_km, "source_magnitude": source_magnitude,
