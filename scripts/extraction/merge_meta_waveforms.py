@@ -34,10 +34,13 @@ for i in tqdm(range(2016, 2022)):
     
     f.close()
 
+# save merged meta file
 select = (pd.notnull(df_all['trace_S_arrival_sample'])) & (pd.notnull(df_all['trace_P_arrival_sample']))
 meta_PS = df_all[select]
 meta_PS.to_csv("../data/metadata.csv", index = False)
 
-# f = h5py.File("../data/waveforms.hdf5", mode = "w")
-# for i in range(nbucket):
-#     f[f'/data/bucket{i + 1}']
+# save merged waveform file
+f = h5py.File("../data/waveforms.hdf5", mode = "w")
+for i in range(nbucket):
+    f[f'/data/bucket{i + 1}'] = data[i + 1]
+f.close()
