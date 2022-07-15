@@ -40,7 +40,6 @@ def update_data(data, streamdata, ibucket):
 eventlimit = None                                                        # for debug only
 
 for quake_year in np.arange(2002, 2022):
-# for quake_year in [2021]:
     if quake_year % size == rank:
         ide = 0
 
@@ -55,7 +54,7 @@ for quake_year in np.arange(2002, 2022):
             "trace_S_arrival_sample", "trace_P_arrival_sample", 
             "trace_S_arrival_uncertainty_s", "trace_P_arrival_uncertainty_s", 
             "trace_S_polarity", "trace_P_polarity", "trace_S_onset", "trace_P_onset",   # new features to be added
-            "trace_snr_db", "splits",                                                          # new features calcuated after extraction
+            "trace_snr_db", "split",                                                          # new features calcuated after extraction
             "CODE"])    # for dev only
 
         for ievent, quakeml  in (enumerate(os.listdir(quakeml_path + str(quake_year)))):
