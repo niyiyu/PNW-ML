@@ -29,7 +29,7 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
-
+etype = 'su'
 bucket_mapping = {'su': 11, 'th': 12, 'px': 13, 'ex': 14, 'sn': 15, 'pc': 16}
 name_mapping = {'su': 'surface event', 'th': 'thunder', 'px': 'probable explosion',
                 'ex': 'explosion', 'sn': 'sonic boom', 'pc': 'plane crash'}
@@ -48,7 +48,7 @@ def update_data(data, streamdata, ibucket, length):
     return data
 
 
-with open("../notebooks/df2.bin", 'rb') as f:
+with open("../data/df2.bin", 'rb') as f:
     df2 = pickle.load(f)
 
 drop_list = []
@@ -73,7 +73,8 @@ meta = pd.DataFrame(columns = [
     "trace_P_arrival_sample", "trace_P_onset",
     "trace_snr_db", "splits"])
 data = {}
-for idx, i in df2[df2['event_type'] == 'px'].iterrows():
+
+for idx, i in df2[df2['event_type'] == etype].iterrows():
     if idx % size == rank:
         event_id = "pnsn" + i['event_id']
         net = i['network']
@@ -96,17 +97,20 @@ for idx, i in df2[df2['event_type'] == 'px'].iterrows():
         else:
             ptime = np.nan
 
-        s = client.get_waveforms(network = net, station = sta, location = loc,
-                             channel = cha + "?", year = starttime.year, doy = starttime.julday)
-        s.trim(starttime-30, starttime + 120)
-        length = 15001
+        try:
+         s = client.get_waveforms(network = net, station = sta, location = loc,
+                             channel = cha + "?", year = starttime.year, doy = starttime.julday,
+                             starttime = starttime - 60, endtime = starttime + 120)
+        except:
+            print(net, sta, loc, cha, starttime)
+         #s.trim(starttime-30, starttime + 120)
+        length = 18001
 
         if len(s) > 0 and len(s.get_gaps()) == 0:
-            s.detrend()
             s.resample(100)
             stream_data = np.array(s)
             if str(stream_data.dtype) != 'object':
-                if stream_data.shape[1] == 150 * 100 + 1:
+                if stream_data.shape[1] == 180 * 100 + 1:
                     data = update_data(data, stream_data, ibucket, length)
                 elif 0 < (stream_data.shape[1] - length) <= 2:   # tolerate 2 smaple
                     data = update_data(data, stream_data[:, :length], ibucket, length)
@@ -145,9 +149,9 @@ for idx, i in df2[df2['event_type'] == 'px'].iterrows():
 
 
 
-meta.to_csv(f"../extract/px_proc{str(rank).zfill(2)}_metadata.csv", sep = ',', index=False)
+meta.to_csv(f"../data/{etype}_proc{str(rank).zfill(2)}_metadata.csv", sep = ',', index=False)
 
-f = h5py.File(f"../extract/px_proc{str(rank).zfill(2)}_waveforms.hdf5", mode = "w")
+f = h5py.File(f"../data/{etype}_proc{str(rank).zfill(2)}_waveforms.hdf5", mode = "w")
 f['/data_format/component_order'] ='ENZ'
 
 f['/data/bucket%d' % ibucket] = data[ibucket]

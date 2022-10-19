@@ -23,12 +23,12 @@ stationxml_path = '/auto/pnwstore1-wd11/PNWStationXML/%s/%s.%s.xml'   # director
 splits = ['train', 'test', 'dev']    
 trace_sampling_rate_hz = 100                                             # resample to 100 hz                                   
 window_length = 150                                                      # window length in seconds
-nbucket = 10
+nbucket = 1
 
 def update_data(data, streamdata, ibucket):
     if streamdata.shape[0] < 3:
         for _ in range(3 - len(streamdata)):
-            streamdata = np.concatenate((streamdata, np.zeros([1, 15001])))
+            streamdata = np.concatenate((np.zeros([1, 15001]), streamdata))
     streamdata = np.expand_dims(streamdata, axis = 0)
     
     if ibucket in data:
@@ -39,7 +39,7 @@ def update_data(data, streamdata, ibucket):
 
 eventlimit = None                                                        # for debug only
 
-for quake_year in np.arange(2002, 2022):
+for quake_year in np.arange(2013, 2018):
     if quake_year % size == rank:
         ide = 0
 
@@ -89,7 +89,7 @@ for quake_year in np.arange(2002, 2022):
                 trace_channel = pick.waveform_id.channel_code
                 polarity = pick.polarity
                 onset = pick.onset
-                if trace_channel[:2] in ['BH', "HH", "EH"]: # limit the instrument type
+                if trace_channel[:2] in ['EN', "HN"]: # limit the instrument type
                     station_latitude_deg = "TBA"
                     station_longitude_deg = "TBA"
                     station_elevation_m = "TBA"
