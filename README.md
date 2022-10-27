@@ -1,4 +1,4 @@
-# PNW
+# Pacific Northwest Curated Seismic Dataset
 
 
 ## PNW Dataset
