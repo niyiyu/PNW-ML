@@ -1,12 +1,24 @@
 # Pacific Northwest Curated Seismic Dataset
+## A ML-ready curated data set for a wide range of seismic signals from Pacific Northwest.
 
 
-## PNW Dataset
-PNW datasets are made of two files: waveform and metadata. Download them using the link below. Note you may access the data directly from Google Colab. See `Google Colab` section below.
-- waveform (waveforms.hdf5 ~35G): https://drive.google.com/file/d/1Ktee6VV4Nz6I0oo0IjGiW8BX_Zzb7wyE/view?usp=sharing
-- metadata (metadata.csv ~19MB): https://drive.google.com/file/d/1TcG1Ey5pxMEZatPXiHufBK0XC_SgO1Bl/view?usp=sharing
-- This dataset follows the structure of [seisbench](https://seisbench.readthedocs.io/en/latest/). See [here](https://seisbench.readthedocs.io/en/latest/pages/data_format.html) to learn more about the  file structure.
+## Datasets
+All datasets are made of two files: waveform and metadata. All follow the structure of [seisbench](https://seisbench.readthedocs.io/en/latest/). See [here](https://seisbench.readthedocs.io/en/latest/pages/data_format.html) to learn more about the  file structure. Download them using the link below. Note you may access the data directly from Google Colab. See `Google Colab` section below.
+
+### ComCat Events (velocity)
+- Channel EH?, BH, and HH?
+- waveform (waveforms.hdf5 ~59G): https://drive.google.com/file/d/1QjtgxhdccaWFZC9Ac0AMywJYYEXq140V/view?usp=share_link
+- metadata (metadata.csv ~42MB): https://drive.google.com/file/d/1pGl5YpkLi_aOJdi0rX6o8QQEIJaCq63l/view?usp=share_link
+
+
+### ComCat Events (acceleration)
+- Channel EN?
+- waveform (waveforms.hdf5 ~2G): https://drive.google.com/file/d/1Bsa9bxxVEwLpQ9LuqRrKxT56Ww-yFJGK/view?usp=share_link
+- metadata (metadata.csv ~1.4MB): https://drive.google.com/file/d/1Sd4eL_kW7FVpJ2hYdK510hOZXfc9pzqd/view?usp=share_link
   
+### Exotic Events
+- waveform (waveforms.hdf5 ~35G): https://drive.google.com/file/d/10fnRTU8MqwxCQMef94lCZrtXCuog6SS0/view?usp=share_link
+- metadata (metadata.csv ~13.4MB): https://drive.google.com/file/d/1Rf3zt3kzr3x3El1ytIVYbuWs_5GsCGnr/view?usp=share_link
 
 ### Inspect Dataset
 Here are two ways to look at PNW dataset. 
@@ -18,18 +30,7 @@ A jupyter notebook is available to load and plot PNW dataset at [here](./noteboo
 
 If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available. Please let me know if you have made interactive plotting works in Google Colab before.
 
+## ML-enhanced PNSN catalog
 
-## PNW ML Catalog
-PNW ML Catalog is made of two parts: waveform and metadata. Download the metadata using the link below. Due to permission issue, links to download waveform are not available, but you can either access the data directly from Google Colab, or download waveform with ObsPy IRIS client. See `Google Colab` section below.
-- waveform (waveforms.hdf5 ~66G)
-- metadata (metadata.csv ~60MB): https://drive.google.com/file/d/1TcG1Ey5pxMEZatPXiHufBK0XC_SgO1Bl/view?usp=sharing
 
-### Inspect Dataset
-Here are two ways to look at PNW ML Catalog. 
-1. Jupyter Notebook
-A jupyter notebook is available to load and plot PNW ML Catalog at [here](./notebooks/inspect_pnwml_catalog.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
-
-1. Google Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1t-Gz0sK1ZZzQUqOHn5cxesX7jWd6Um7C?usp=sharing)
-
-Similar to the dataset, a Colab notebook is available to work directly with the browser.
+## Reference
