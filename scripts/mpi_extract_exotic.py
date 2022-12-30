@@ -152,7 +152,6 @@ for idx, i in df2[df2['event_type'] == etype].iterrows():
 meta.to_csv(f"../data/{etype}_proc{str(rank).zfill(2)}_metadata.csv", sep = ',', index=False)
 
 f = h5py.File(f"../data/{etype}_proc{str(rank).zfill(2)}_waveforms.hdf5", mode = "w")
-f['/data_format/component_order'] ='ENZ'
 
 f['/data/bucket%d' % ibucket] = data[ibucket]
 f.close()
