@@ -170,7 +170,7 @@ for quake_year in np.arange(2002, 2022):
         meta_PS.to_csv("../data/mpiextract/proc%s_metadata.csv" % str(quake_year), sep = ',', index=False)
         
         f = h5py.File("../data/mpiextract/proc%s_waveforms.hdf5" % str(quake_year), mode = "w")
-        f['/data_format/component_order'] ='ZNE'
+        f['/data_format/component_order'] ='ENZ'
         for b in range(nbucket):
             f['/data/bucket%d' % (b + 1)] = data[b + 1]
         f.close()
