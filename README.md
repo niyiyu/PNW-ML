@@ -4,7 +4,7 @@
 ![map](./figures/README_overview.png)
 
 ## Overview
-All datasets are made of two files: waveform and metadata. All follow the structure of [seisbench](https://seisbench.readthedocs.io/en/latest/). See [here](https://seisbench.readthedocs.io/en/latest/pages/data_format.html) to learn more about the  file structure. Download them using the link below. Note you may access the data directly from Google Colab. See `Google Colab` section below.
+All datasets are made of two files: waveform and metadata. All follow the structure of [seisbench](https://seisbench.readthedocs.io/en/latest/). See [here](https://seisbench.readthedocs.io/en/latest/pages/data_format.html) to learn more about the  file structure. Download using the link below. Note that you may access the data directly from Google Colab. See `Google Colab` section below.
 
 ### ComCat Events
 - EH?, BH?, and HH? channel (velocity)
@@ -27,7 +27,7 @@ All datasets are made of two files: waveform and metadata. All follow the struct
 ### Inspect Dataset
 Here are two ways to look at PNW dataset. 
 1. Jupyter Notebook
-A jupyter notebook is available to load and plot PNW dataset at [here](./notebooks/inspect_pnw_dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out).
+A jupyter notebook is available to load and plot PNW dataset at [here](./notebooks/inspect_pnw_dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out for checking the picks).
 
 2. Google Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
