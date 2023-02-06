@@ -1,4 +1,5 @@
 # Pacific Northwest Curated Seismic Dataset
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## A ML-ready curated data set for a wide range of seismic signals from Pacific Northwest.
 
 ![map](./figures/README_overview.png)
