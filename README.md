@@ -70,7 +70,7 @@ If you are more familiar with Google Colab, go to the link above. Note that inte
 | trace_P/S_arrival_uncertainty_s | Picking uncertainty in second |  0.02 |
 | trace_P/S_onset |  |  emergent |
 | trace_P_polarity | - |  undecidable |
-| trace_snr_db | SNR for each component |  6.135$|$3.065$|$11.766 |
+| trace_snr_db | SNR for each component |  6.135|3.065|11.766 |
 
 ## Reference
-Ready soon
+Yiyu Ni(*), Alexander R. Hutko, Francesca Skene, Marine A. Denolle, Stephen D. Malone, Paul Bodin, J. Renate Hartog, Amy Wright, "Curated Pacific Northwest Seismic Dataset", submitted to Seismica
