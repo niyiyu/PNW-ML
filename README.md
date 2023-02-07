@@ -25,6 +25,10 @@ Each dataset has two files: waveform and metadata. All follow the structure of [
   - waveform (~3.9 GB): Coming soon
   - metadata (1.4 MB): [[Google Drive](https://drive.google.com/file/d/1brCZkrKjRtToLxBX5ob7qHX6EBq00nAM/view?usp=sharing)]
 
+### Northern California Sequence (Dec 2022)
+  - waveform (~347 MB):
+  - metadata (126 KB): [[Google Drive](https://drive.google.com/file/d/1BhLVODzlu407JDZ0OteoPgZlTE-o469O/view?usp=sharing)]
+
 ### Inspect Dataset
 Here are two ways to look at PNW dataset. 
 1. Jupyter Notebook
