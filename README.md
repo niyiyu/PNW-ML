@@ -9,21 +9,21 @@ Each dataset has two files: waveform and metadata. All follow the structure of [
 
 ### ComCat Events
 - EH?, BH?, and HH? channel (velocity)
-  - waveform (~63 GB): [[Google Drive](https://drive.google.com/file/d/1QjtgxhdccaWFZC9Ac0AMywJYYEXq140V/view?usp=share_link)]
-  - metadata (~52 MB): [[Google Drive](https://drive.google.com/file/d/1pGl5YpkLi_aOJdi0rX6o8QQEIJaCq63l/view?usp=share_link)]
+  - waveform (~63 GB): Coming soon
+  - metadata (50.4 MB): [[Google Drive](https://drive.google.com/file/d/1bKDITx8KiDGZUaUoWQSZilpo7GhdWxKv/view?usp=sharing)]
 
 - EN? (accelerometer)
-  - waveform (~2.1 GB): [[Google Drive](https://drive.google.com/file/d/1Bsa9bxxVEwLpQ9LuqRrKxT56Ww-yFJGK/view?usp=share_link)]
-  - metadata (~1.8 MB): [[Google Drive](https://drive.google.com/file/d/1Sd4eL_kW7FVpJ2hYdK510hOZXfc9pzqd/view?usp=share_link)]
+  - waveform (~2.1 GB): Coming soon
+  - metadata (1.7 MB): [[Google Drive](https://drive.google.com/file/d/1xpeaoC3NsZqyICIbNHF2J46WsfZwwF6K/view?usp=sharing)]
 
 ### Noise Waveform
 - EH?, BH, and HH? channel (velocity)
-  - waveform (~18 GB)
-  - metadata (~5.0 MB)
+  - waveform (~18 GB): Coming soon
+  - metadata (4.9 MB): [[Google Drive](https://drive.google.com/file/d/1Ou5AKRczEqnNRsSEUSafIRlGcXTvLLUW/view?usp=sharing)]
   
 ### Exotic Events
-  - waveform (~3.9 GB): [[Google Drive](https://drive.google.com/file/d/10fnRTU8MqwxCQMef94lCZrtXCuog6SS0/view?usp=share_link)]
-  - metadata (~1.4 MB): [[Google Drive](https://drive.google.com/file/d/1Rf3zt3kzr3x3El1ytIVYbuWs_5GsCGnr/view?usp=share_link)]
+  - waveform (~3.9 GB): Coming soon
+  - metadata (1.4 MB): [[Google Drive](https://drive.google.com/file/d/1brCZkrKjRtToLxBX5ob7qHX6EBq00nAM/view?usp=sharing)]
 
 ### Inspect Dataset
 Here are two ways to look at PNW dataset. 
