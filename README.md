@@ -29,6 +29,8 @@ Each dataset has two files: waveform and metadata. All follow the structure of [
   - waveform (346 MB): [[Google Drive](https://drive.google.com/file/d/15UxIbxacloPlY2DUTDBEnBaMYvh2eXVI/view?usp=sharing)]
   - metadata (126 KB): [[Google Drive](https://drive.google.com/file/d/1BhLVODzlu407JDZ0OteoPgZlTE-o469O/view?usp=sharing)]
 
+### ML-enhanced catalog
+  - CSV (MB): [[Google Drive](https://drive.google.com/file/d/16qUT_3-duVuKwfmPmvtH5EifL4eeyRvv/view?usp=sharing)] 
 ### Inspect Dataset
 Here are two ways to look at PNW dataset. 
 1. Jupyter Notebook
