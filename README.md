@@ -31,15 +31,22 @@ Each dataset has two files: waveform and metadata. All follow the structure of [
 
 ### ML-enhanced catalog
   - CSV (MB): [[Google Drive](https://drive.google.com/file/d/16qUT_3-duVuKwfmPmvtH5EifL4eeyRvv/view?usp=sharing)] 
+
+
 ### Inspect Dataset
-Here are two ways to look at PNW dataset. 
+Here are several ways to look at PNW dataset. 
+
 1. Jupyter Notebook
    
-A jupyter notebook is available to load and plot PNW dataset at [here](./notebooks/inspect_pnw_dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out for checking the picks).
+  A jupyter notebook is available to load and plot PNW dataset at [here](./notebooks/inspect_pnw_dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out for checking the picks). You would need to download the full dataset to the local.
 
-1. Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
+2. Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
 
-If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available.
+  If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available on Colab.
+
+3. We also provide a mini version of the dataset, which contains 500 earthquake streams, 500 explosion streams, 500 surface event streams, 126 sonic boom streams, and 94 thunder quake streams.
+  - waveform (640 MB): [[Google Drive](https://drive.google.com/file/d/1jIZP96p3bBDJGXMp73Dlh4zTaSjjilaB/view?usp=sharing)]
+  - metadata (424 KB): [[Google Drive](https://drive.google.com/file/d/1F_A91-WmBSVbLS8YyxMrJhAIS_2w04-T/view?usp=sharing)]
 
 ## Metadata
 | Attribute      | Description | Example |
