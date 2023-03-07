@@ -68,10 +68,10 @@ Here are several ways to look at PNW dataset.
 | station_network_code | FDSN network code | UW |
 | station_code | FDSN station code | GNW |
 | station_location_code | FDSN location code | 01 |
+| station_channel_code | FDSN channel code (first two digits) | BH |
 | station_latitude_deg | - | 47.5641 |
 | station_longitude_deg | - | -122.825 |
 | station_elevation_m | - | 220.0 |
-| trace_channel | FDSN channel code (first two digits) | BH |
 | trace_name | Bucket and array index | bucket1\$0,:3:15001 |
 | trace_sampling_rate_hz | All traces resampled to 100 Hz | 100 |
 | trace_start_time |  Trace start time in UTC | 2002-10-03T01:55:59.530000Z |
