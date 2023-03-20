@@ -40,7 +40,7 @@ Here are several ways to look at PNW dataset.
    
   A jupyter notebook is available to load and plot PNW dataset at [here](./notebooks/inspect_pnw_dataset.ipynb). Download and run it on a local machine to enable the interactive plotting (e.g., zoom in/out for checking the picks). You would need to download the full dataset to the local.
 
-2. Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z6Ls_cj5cHu0ml_9DK3ExIm3b4EcNsg8?usp=sharing)
+2. Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Qu54ZI_HxJjIgLgo9K18-vwpXWoIeYM?usp=sharing)
 
   If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available on Colab.
 
@@ -79,6 +79,8 @@ Here are several ways to look at PNW dataset.
 | trace_P/S_arrival_uncertainty_s | Picking uncertainty in second |  0.02 |
 | trace_P/S_onset |  |  emergent |
 | trace_P_polarity | - |  undecidable |
+| trace_has_offset | Any visible offset in the trace | 1 |
+| trace_missing_channel | Number of missing channel of the trace | 2 |
 | trace_snr_db | SNR for each component |  6.135|3.065|11.766 |
 
 ## Reference
