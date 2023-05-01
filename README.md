@@ -7,7 +7,9 @@
 ## Overview
 Each dataset has two files: waveform and metadata. All follow the structure of [seisbench](https://seisbench.readthedocs.io/en/latest/). See [here](https://seisbench.readthedocs.io/en/latest/pages/data_format.html) to learn more about the  file structure. Download using the link below. Note that you may access the data directly from Google Colab. See `Google Colab` section below.
 
-### ComCat Events
+## Datasets
+
+### 1. ComCat Events
 - EH?, BH?, and HH? channel (velocity)
   - waveform (62.7 GB): [[Google Drive](https://drive.google.com/file/d/10UCLyJSRibvhon9CuUTfns3fObNFKDer/view?usp=sharing)]
   - metadata (50.4 MB): [[Google Drive](https://drive.google.com/file/d/1bKDITx8KiDGZUaUoWQSZilpo7GhdWxKv/view?usp=sharing)]
@@ -16,24 +18,24 @@ Each dataset has two files: waveform and metadata. All follow the structure of [
   - waveform (2.1 GB): [[Google Drive](https://drive.google.com/file/d/1I16psU3YJ7CFFNWZiaAGPlw1M3BmvuT8/view?usp=sharing)]
   - metadata (1.7 MB): [[Google Drive](https://drive.google.com/file/d/1xpeaoC3NsZqyICIbNHF2J46WsfZwwF6K/view?usp=sharing)]
 
-### Noise Waveform
+### 2. Noise Waveform
 - EH?, BH, and HH? channel (velocity)
   - waveform (~18 GB): [[Google Drive](https://drive.google.com/file/d/1Z55WTcoyy-bR-WwWbedlZJrSo6tkRLlJ/view?usp=sharing)]
   - metadata (4.9 MB): [[Google Drive](https://drive.google.com/file/d/1Ou5AKRczEqnNRsSEUSafIRlGcXTvLLUW/view?usp=sharing)]
   
-### Exotic Events
+### 3. Exotic Events
   - waveform (3.9 GB): [[Google Drive](https://drive.google.com/file/d/1pxGQnLnAwXf9Zhc8xfh1HXEOsXjga2sG/view?usp=sharing)]
   - metadata (1.4 MB): [[Google Drive](https://drive.google.com/file/d/1brCZkrKjRtToLxBX5ob7qHX6EBq00nAM/view?usp=sharing)]
 
-### Northern California Sequence (Dec 2022)
+### 4. Northern California Sequence (Dec 2022)
   - waveform (346 MB): [[Google Drive](https://drive.google.com/file/d/15UxIbxacloPlY2DUTDBEnBaMYvh2eXVI/view?usp=sharing)]
   - metadata (126 KB): [[Google Drive](https://drive.google.com/file/d/1BhLVODzlu407JDZ0OteoPgZlTE-o469O/view?usp=sharing)]
 
-### ML-enhanced catalog
+### 5. ML-enhanced catalog
   - CSV (MB): [[Google Drive](https://drive.google.com/file/d/16qUT_3-duVuKwfmPmvtH5EifL4eeyRvv/view?usp=sharing)] 
 
 
-### Inspect Dataset
+## Inspect Dataset
 Here are several ways to look at PNW dataset. 
 
 1. Jupyter Notebook
