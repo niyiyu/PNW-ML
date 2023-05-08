@@ -88,7 +88,7 @@ Here are several ways to check or use PNW dataset.
 Ni, Y., Hutko, A., Skene, F., Denolle, M., Malone, S., Bodin, P., Hartog, R., & Wright, A. (2023). Curated Pacific Northwest AI-ready Seismic Dataset. *Seismica*, 2(1). https://doi.org/10.26443/seismica.v2i1.368
 
 BiBTex:
-```
+```bibtex
 @article{Ni_Hutko_Skene_Denolle_Malone_Bodin_Hartog_Wright_2023, 
   title   = {Curated Pacific Northwest AI-ready Seismic Dataset}, 
   volume  = {2}, 
@@ -100,7 +100,6 @@ BiBTex:
   year    = {2023}, 
   month   = {May} 
 }
-
 ```
 
 ## Report bugs
