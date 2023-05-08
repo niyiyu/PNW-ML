@@ -85,9 +85,23 @@ Here are several ways to check or use PNW dataset.
 | trace_snr_db | SNR for each component |  6.135|3.065|11.766 |
 
 ## Reference
-Yiyu Ni(*), Alexander R. Hutko, Francesca Skene, Marine A. Denolle, Stephen D. Malone, Paul Bodin, J. Renate Hartog, Amy Wright, "Curated Pacific Northwest Seismic Dataset", submitted to Seismica
+Ni, Y., Hutko, A., Skene, F., Denolle, M., Malone, S., Bodin, P., Hartog, R., & Wright, A. (2023). Curated Pacific Northwest AI-ready Seismic Dataset. *Seismica*, 2(1). https://doi.org/10.26443/seismica.v2i1.368
 
 BiBTex:
 ```
-coming soon
+@article{Ni_Hutko_Skene_Denolle_Malone_Bodin_Hartog_Wright_2023, 
+  title   = {Curated Pacific Northwest AI-ready Seismic Dataset}, 
+  volume  = {2}, 
+  url     = {https://seismica.library.mcgill.ca/article/view/368}, 
+  DOI     = {10.26443/seismica.v2i1.368}, 
+  number  = {1}, 
+  journal = {Seismica}, 
+  author  = {Ni, Yiyu and Hutko, Alexander and Skene, Francesca and Denolle, Marine and Malone, Stephen and Bodin, Paul and Hartog, Renate and Wright, Amy}, 
+  year    = {2023}, 
+  month   = {May} 
+}
+
 ```
+
+## Report bugs
+If you find anything wrong with this dataset, please create an Issue at https://github.com/niyiyu/PNW-ML/issues or send me an email (niyiyu@uw.edu)
