@@ -12,24 +12,24 @@ We are making two copies of the raw dataset: one on Google Drive, another on UW 
 
 ### 1. ComCat Events
 - EH, BH, and HH channel (velocity)
-  - waveform (62.7 GB): [[GDrive](https://drive.google.com/file/d/10UCLyJSRibvhon9CuUTfns3fObNFKDer/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/comcat_waveforms.hdf5)]
-  - metadata (50.4 MB): [[GDrive](https://drive.google.com/file/d/1bKDITx8KiDGZUaUoWQSZilpo7GhdWxKv/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/comcat_metadata.csv)]
+  - waveform (62.7 GB): [[GDrive](https://drive.google.com/file/d/10UCLyJSRibvhon9CuUTfns3fObNFKDer/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/comcat_waveforms.hdf5)]
+  - metadata (50.4 MB): [[GDrive](https://drive.google.com/file/d/1bKDITx8KiDGZUaUoWQSZilpo7GhdWxKv/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/comcat_metadata.csv)]
 
 - EN (accelerometer)
-  - waveform (2.1 GB): [[GDrive](https://drive.google.com/file/d/1I16psU3YJ7CFFNWZiaAGPlw1M3BmvuT8/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/accelerometer_waveforms.hdf5)]
-  - metadata (1.7 MB): [[GDrive](https://drive.google.com/file/d/1xpeaoC3NsZqyICIbNHF2J46WsfZwwF6K/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/accelerometer_metadata.csv)]
+  - waveform (2.1 GB): [[GDrive](https://drive.google.com/file/d/1I16psU3YJ7CFFNWZiaAGPlw1M3BmvuT8/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/accelerometer_waveforms.hdf5)]
+  - metadata (1.7 MB): [[GDrive](https://drive.google.com/file/d/1xpeaoC3NsZqyICIbNHF2J46WsfZwwF6K/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/accelerometer_metadata.csv)]
 
 ### 2. Noise Waveform (EH, BH, and HH)
-  - waveform (~18 GB): [[GDrive](https://drive.google.com/file/d/1Z55WTcoyy-bR-WwWbedlZJrSo6tkRLlJ/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/noise_waveforms.hdf5)]
-  - metadata (4.9 MB): [[GDrive](https://drive.google.com/file/d/1Ou5AKRczEqnNRsSEUSafIRlGcXTvLLUW/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/noise_metadata.csv)]
+  - waveform (~18 GB): [[GDrive](https://drive.google.com/file/d/1Z55WTcoyy-bR-WwWbedlZJrSo6tkRLlJ/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/noise_waveforms.hdf5)]
+  - metadata (4.9 MB): [[GDrive](https://drive.google.com/file/d/1Ou5AKRczEqnNRsSEUSafIRlGcXTvLLUW/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/noise_metadata.csv)]
   
 ### 3. Exotic Events (EH, BH, and HH)
-  - waveform (3.9 GB): [[GDrive](https://drive.google.com/file/d/1pxGQnLnAwXf9Zhc8xfh1HXEOsXjga2sG/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/exotic_waveforms.hdf5)]
-  - metadata (1.4 MB): [[GDrive](https://drive.google.com/file/d/1brCZkrKjRtToLxBX5ob7qHX6EBq00nAM/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/exotic_metadata.csv)]
+  - waveform (3.9 GB): [[GDrive](https://drive.google.com/file/d/1pxGQnLnAwXf9Zhc8xfh1HXEOsXjga2sG/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/exotic_waveforms.hdf5)]
+  - metadata (1.4 MB): [[GDrive](https://drive.google.com/file/d/1brCZkrKjRtToLxBX5ob7qHX6EBq00nAM/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/exotic_metadata.csv)]
 
 ### 4. Northern California Sequence (December 2022)
-  - waveform (346 MB): [[GDrive](https://drive.google.com/file/d/15UxIbxacloPlY2DUTDBEnBaMYvh2eXVI/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/norcal_waveforms.hdf5)]
-  - metadata (126 KB): [[GDrive](https://drive.google.com/file/d/1BhLVODzlu407JDZ0OteoPgZlTE-o469O/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/norcal_metadata.csv)]
+  - waveform (346 MB): [[GDrive](https://drive.google.com/file/d/15UxIbxacloPlY2DUTDBEnBaMYvh2eXVI/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/norcal_waveforms.hdf5)]
+  - metadata (126 KB): [[GDrive](https://drive.google.com/file/d/1BhLVODzlu407JDZ0OteoPgZlTE-o469O/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/norcal_metadata.csv)]
 
 ### 5. ML-enhanced catalog
   - CSV (~93 MB): [[GDrive](https://drive.google.com/file/d/16qUT_3-duVuKwfmPmvtH5EifL4eeyRvv/view?usp=sharing)] 
@@ -47,8 +47,8 @@ Here are several ways to check or use PNW dataset quick.
   If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available on Colab.
 
 3. We also provide a mini version of the dataset, which contains 500 earthquake streams, 500 explosion streams, 500 surface event streams, 126 sonic boom streams, and 94 thunder quake streams.
-  - waveform (640 MB): [[Google Drive](https://drive.google.com/file/d/1jIZP96p3bBDJGXMp73Dlh4zTaSjjilaB/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/miniPNW_waveforms.hdf5)]
-  - metadata (424 KB): [[Google Drive](https://drive.google.com/file/d/1F_A91-WmBSVbLS8YyxMrJhAIS_2w04-T/view?usp=sharing)] | [[UW-ESS](http://dasway.ess.washington.edu/niyiyu/PNW-ML/miniPNW_metadata.csv)]
+  - waveform (640 MB): [[Google Drive](https://drive.google.com/file/d/1jIZP96p3bBDJGXMp73Dlh4zTaSjjilaB/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/miniPNW_waveforms.hdf5)]
+  - metadata (424 KB): [[Google Drive](https://drive.google.com/file/d/1F_A91-WmBSVbLS8YyxMrJhAIS_2w04-T/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/niyiyu/PNW-ML/miniPNW_metadata.csv)]
 
 ## Metadata
 | Attribute | Description | Example |
