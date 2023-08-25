@@ -103,5 +103,8 @@ BiBTex:
 }
 ```
 
+## Known issue
+* [Agu 25, 2023] Very few events (~15) in the ComCat dataset may have inconsistent `event_type_pnsn_label` and `event_type`. This issue comes from the outdated ComCat event metadata. Please prioritize PNSN label when such inconsistent occurs.
+
 ## Report bugs
 If you find anything wrong with this dataset, please create an Issue at https://github.com/niyiyu/PNW-ML/issues or send me an email (niyiyu@uw.edu)
