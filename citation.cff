@@ -1,23 +1,33 @@
 cff-version: 1.2.0
-message: "Please cite the following reference if you use the data & code for your work:"
+message: "Please cite the following reference if you use the data & code for your work"
 authors:
 - family-names: "Ni"
   given-names: "Yiyu"
-- family-names: "Hutko"
-  given-names: "Alexander"
-- family-names: "Skene"
-  given-names: "Francesca"
-- family-names: "Denolle"
-  given-names: "Marine"
-- family-names: "Malone"
-  given-names: "Stephen"
-- family-names: "Bodin"
-  given-names: "Paul"
-- family-names: "Hartog"
-  given-names: "Renate"
-- family-names: "Wright"
-  given-names: "Amy"
-title: "Curated Pacific Northwest AI-ready Seismic Dataset."
-date-released: 2023
-doi: https://doi.org/10.26443/seismica.v2i1.368
 url: "https://github.com/niyiyu/PNW-ML"
+doi: 10.5281/zenodo.7627103
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Ni"
+    given-names: "Yiyu"
+  - family-names: "Hutko"
+    given-names: "Alexander"
+  - family-names: "Skene"
+    given-names: "Francesca"
+  - family-names: "Denolle"
+    given-names: "Marine"
+  - family-names: "Malone"
+    given-names: "Stephen"
+  - family-names: "Bodin"
+    given-names: "Paul"
+  - family-names: "Hartog"
+    given-names: "Renate"
+  - family-names: "Wright"
+    given-names: "Amy"
+  title: "Curated Pacific Northwest AI-ready Seismic Dataset."
+  journal: "Seismica"
+  month: May
+  volume: 2
+  number: 1
+  doi: https://doi.org/10.26443/seismica.v2i1.368
+  url: https://seismica.library.mcgill.ca/article/view/368
