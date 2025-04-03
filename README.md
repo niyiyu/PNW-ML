@@ -1,6 +1,6 @@
 # Pacific Northwest Curated Seismic Dataset
 [![DOI](https://zenodo.org/badge/470042054.svg)](https://zenodo.org/badge/latestdoi/470042054) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## A ML-ready curated data set for a wide range of sources from the Pacific Northwest.
+## A curated dataset for a wide range of sources from the Pacific Northwest.
 
 ![map](./figures/README_overview.png)
 
@@ -8,7 +8,7 @@
 Each dataset has two files: waveform and metadata. All follow the structure of [seisbench format](https://seisbench.readthedocs.io/en/latest/). See [here](https://seisbench.readthedocs.io/en/latest/pages/data_format.html) to learn more about the  file structure. Download using the link below. Note that you may access the data directly from Google Colab. See `Google Colab` section below.
 
 ## Datasets
-We are making two copies of the raw dataset: one on Google Drive, another on UW ESS server. Choose the one that gives you the best download performance. The ComCat dataset is also available through [SeisBench](https://github.com/seisbench/seisbench).
+We are hosting two copies of the dataset: one on Google Drive, another on UW ESS server. Choose the one that gives you the best download performance. All datasets are also available through [SeisBench](https://github.com/seisbench/seisbench).
 
 ### 1. ComCat Events
 - EH, BH, and HH channel (velocity)
@@ -46,9 +46,13 @@ Here are several ways to check or use PNW dataset quick.
 
   If you are more familiar with Google Colab, go to the link above. Note that interactive plotting is not available on Colab.
 
-3. We also provide a mini version of the dataset, which contains 500 earthquake streams, 500 explosion streams, 500 surface event streams, 126 sonic boom streams, and 94 thunder quake streams.
-  - waveform (640 MB): [[Google Drive](https://drive.google.com/file/d/1jIZP96p3bBDJGXMp73Dlh4zTaSjjilaB/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/shared/niyiyu/PNW-ML/miniPNW_waveforms.hdf5)]
-  - metadata (424 KB): [[Google Drive](https://drive.google.com/file/d/1F_A91-WmBSVbLS8YyxMrJhAIS_2w04-T/view?usp=sharing)] | [[UW-ESS](https://dasway.ess.washington.edu/shared/niyiyu/PNW-ML/miniPNW_metadata.csv)]
+3. A mini version of the dataset, which contains 500 earthquake streams, 500 explosion streams, 500 surface event streams, 126 sonic boom streams, and 94 thunder quake streams.
+  - waveform (640 MB): [[Google Drive](https://drive.google.com/file/d/1Yq6n8R0sb338OaT0KTwW2XFDb9x_LG6g/view?usp=share_link)] | [[UW-ESS](https://dasway.ess.washington.edu/shared/niyiyu/PNW-ML/miniPNW_waveforms.hdf5)]
+  - metadata (424 KB): [[Google Drive](https://drive.google.com/file/d/1Y0nK6ObBVABuoTopaWRNg2lPqjQsXa7e/view?usp=share_link)] | [[UW-ESS](https://dasway.ess.washington.edu/shared/niyiyu/PNW-ML/miniPNW_metadata.csv)]
+
+4. A meso version with 10% of the full ComCat dataset.
+  - waveform (6.3 GB): [[Google Drive](https://drive.google.com/file/d/1SrbiQpBpU6mPq5Un_lJpPcfBekwczLzp/view?usp=share_link)] | [[UW-ESS](https://dasway.ess.washington.edu/shared/niyiyu/PNW-ML/mesoPNW_waveforms.hdf5)]
+  - metadata (4.7 MB): [[Google Drive](https://drive.google.com/file/d/1HK2AuWPQj3dCdKShYcJ7a5E577XASrab/view?usp=share_link)] | [[UW-ESS](https://dasway.ess.washington.edu/shared/niyiyu/PNW-ML/mesoPNW_metadata.csv)]
 
 ## Metadata
 | Attribute | Description | Example |
@@ -90,7 +94,7 @@ Ni, Y., Hutko, A., Skene, F., Denolle, M., Malone, S., Bodin, P., Hartog, R., & 
 
 BiBTex:
 ```bibtex
-@article{Ni_Hutko_Skene_Denolle_Malone_Bodin_Hartog_Wright_2023, 
+@article{ni2023pnw, 
   title   = {Curated Pacific Northwest AI-ready Seismic Dataset}, 
   volume  = {2}, 
   url     = {https://seismica.library.mcgill.ca/article/view/368}, 
