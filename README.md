@@ -1,6 +1,5 @@
 # Pacific Northwest Curated Seismic Dataset
-[![DOI](https://zenodo.org/badge/470042054.svg)](https://zenodo.org/badge/latestdoi/470042054) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## A curated dataset for a wide range of sources from the Pacific Northwest
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![map](./figures/README_overview.png)
 
@@ -100,15 +99,15 @@ Ni, Y., Hutko, A., Skene, F., Denolle, M., Malone, S., Bodin, P., Hartog, R., & 
 BiBTex:
 ```bibtex
 @article{ni2023pnw, 
-  title={Curated Pacific Northwest AI-ready Seismic Dataset}, 
-  volume={2}, 
-  url={https://seismica.library.mcgill.ca/article/view/368}, 
-  number={1}, 
-  journal={Seismica}, 
-  author={Ni, Yiyu and Hutko, Alexander and Skene, Francesca and Denolle, Marine and Malone, Stephen and Bodin, Paul and Hartog, Renate and Wright, Amy}, 
-  year={2023}, 
-  month={05},
-  doi={10.26443/seismica.v2i1.368}
+    title={Curated Pacific Northwest AI-ready Seismic Dataset}, 
+    volume={2}, 
+    url={https://seismica.library.mcgill.ca/article/view/368}, 
+    number={1}, 
+    journal={Seismica}, 
+    author={Ni, Yiyu and Hutko, Alexander and Skene, Francesca and Denolle, Marine and Malone, Stephen and Bodin, Paul and Hartog, Renate and Wright, Amy}, 
+    year={2023}, 
+    month={05},
+    doi={10.26443/seismica.v2i1.368}
 }
 ```
 
